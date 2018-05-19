@@ -63,7 +63,7 @@ run_once({ "unclutter -root" }) -- entries must be comma-separated
 local chosen_theme = 'powerarrow'
 local modkey       = "Mod4"
 local altkey       = "Mod1"
-local terminal     = "xterm"
+local terminal     = "gnome-terminal"
 local editor       = os.getenv("EDITOR") or "nano"
 local gui_editor   = "gvim"
 local browser      = "firefox"

@@ -615,7 +615,7 @@ awful.rules.rules = {
 
     -- Titlebars
     { rule_any = { type = { "dialog", "normal" } },
-      properties = { titlebars_enabled = false } },
+      properties = { titlebars_enabled = true } },
 
     -- Set Firefox to always map on the first tag on screen 1.
     { rule = { class = "Firefox" },
@@ -666,7 +666,7 @@ client.connect_signal("request::titlebars", function(c)
 
     awful.titlebar(c, {size = 16}) : setup {
         { -- Left
-            awful.titlebar.widget.iconwidget(c),
+            -- awful.titlebar.widget.iconwidget(c),
             buttons = buttons,
             layout  = wibox.layout.fixed.horizontal
         },
